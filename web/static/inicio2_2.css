@@ -1,0 +1,122 @@
+body{
+    font-style: italic;
+    text-align: center;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+
+#header{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-family: bakery;
+    font-size: 100px;
+}
+#header a{
+    text-decoration: none;
+    color: #aaa;
+    border-bottom: 1px solid #ccc;
+}
+
+#header a:hover{
+    color: #ccc;
+}
+
+#navegador{
+    list-style: none;
+    text-align: center;
+    background-color: pink;
+    border-radius: 20px;
+}
+
+#navegador li{
+    display: inline;
+    text-align: center;
+    margin: 0 50px 0 0;
+}
+
+#navegador li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 2px 7px 2px 7px;
+}
+
+#navegador li a:hover{
+    border-radius: 5px ;
+    background-color: #FFA4BA;
+}
+
+
+img{
+    width: 500px;
+    height: 400px;
+}
+
+
+h2 a{
+    font-family: bakery;
+    text-decoration: none;
+    font-size: 45px;
+    color: purple;
+}
+h4 a{
+    font-family: bakery;
+    text-decoration: none;
+    font-size: 25px;
+    color: purple;
+}
+
+h3 a{
+    font-family: bakery;
+    text-decoration: none;
+    font-size: 25px;
+    color: purple;
+
+}
+
+#contenedor{
+    margin-top: 100px;
+    width: 500px;
+    margin-left: 250px;
+}
+
+#contenido{
+    width: 500px;
+    text-align: left;
+}
+textarea{
+    width: 500px;
+    border: transparent;
+    overflow: hidden;
+    font-style: italic;
+    font-weight: bold;
+    resize: none;
+    background-color: white;
+}
+a{
+  text-decoration: none;
+}
+
+footer{
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    font-weight: lighter;
+    color: gray;
+    font-size: 20px;
+}
+footer li{
+    list-style: none;
+}
+#informacion li{
+    display: inline;
+}
+
+#contacto li{
+    display: inline;
+    padding: 2px 10px 2px;
+}

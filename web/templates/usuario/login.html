@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename="login1.css") }}">
+    </head>
+    <body>
+        <h1 id="header"><a href="#index">La cocina de mami</a></h1>
+        <ul id="navegador">
+            {% if session.get('usuario_id') == None %}
+            <li><a href=" {{url_for('index')}} ">Inicio</a></li>
+            <li><a href=" {{url_for('categorias')}} ">Categorias</a></li>
+            <li><a href=" {{url_for('recetas')}} ">Recetas</a></li>
+            <li><a href=" {{url_for('register')}} ">Registrarse</a></li>
+            <li><a href=" {{url_for('login')}} ">Iniciar sesion</a></li>
+            {% else %}
+            <li><a href=" {{url_for('index')}} ">Inicio</a></li>
+            <li><a href=" {{url_for('categorias')}} ">Categorias</a></li>
+            <li><a href=" {{url_for('recetas')}} ">Recetas</a></li>
+            <li><a href=" {{url_for('logout')}} ">Cerrar sesion</a></li>
+            {% endif %}
+        </ul>
+        {% if session.get('usuario_id') == None %}
+        <form method="POST">
+            <div id="contenedor">
+                <h2>La cocina de mami</h2>
+                <label for="username">Nombre de Usuario</label>
+                <br/>
+                <input   name="username" id="username" required/>
+                <br/>
+                <label for="password">Password</label>
+                <br/>
+                <input type="password"name="password" id="password" required />
+                <br/>
+                <input type="submit" value="Ingresar"/>
+            </div>
+        </form>
+        {% endif %}
+        <footer>
+            <ul id="informacion">
+                <li>2020</li>
+                <li>By Jesus Figuera</li>
+            </ul>
+    </body>
+</html>

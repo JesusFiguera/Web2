@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <title>La cocina de mami</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename="categorias1.css") }}">
+    </head>
+    <body>
+        <h1 id="header"><a href="#">La cocina de mami</a></h1>
+        <ul id="navegador">
+            {% if session.get('usuario_id') == None %}
+            <li><a href=" {{url_for('index')}} ">Inicio</a></li>
+            <li><a href=" {{url_for('categorias')}} ">Categorias</a></li>
+            <li><a href=" {{url_for('recetas')}} ">Recetas</a></li>
+            <li><a href=" {{url_for('register')}} ">Registrarse</a></li>
+            <li><a href=" {{url_for('login')}} ">Iniciar sesion</a></li>
+            {% else %}
+            <li><a href=" {{url_for('index')}} ">Inicio</a></li>
+            <li><a href=" {{url_for('categorias')}} ">Categorias</a></li>
+            <li><a href=" {{url_for('recetas')}} ">Recetas</a></li>
+            {% if permisos['permisos'] == 1 %}
+            <li><a href=" {{url_for('create')}} ">Nueva receta</a></li>
+            {% endif %}
+            <li><a href=" {{url_for('logout')}} ">Cerrar sesion</a></li>
+            {% endif %}
+        </ul>
+        {% if receta == None %}
+        <h1>Faltan recetas por agregar</h1>
+        {% else %}
+        <h1 id="head_categorias">Categorias</h1>
+        <ul id="categorias">
+            <li><a href=" {{url_for('index_categorias', categoria='Dulce')}} ">Dulce</a></li>
+            <li><a href=" {{url_for('index_categorias', categoria='Salado')}} ">Salado</a></li>
+        </ul>
+        {% endif %}
+        <footer>
+            <ul id="informacion">
+                <li>2020</li>
+                <li>By Jesus Figuera</li>
+            </ul>
+        </footer>
+    </body>
+</html>

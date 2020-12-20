@@ -1,0 +1,102 @@
+body{
+    width: 1024px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+
+#header{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-family: bakery;
+    font-size: 100px;
+}
+#header a{
+    text-decoration: none;
+    color: #aaa;
+    border-bottom: 1px solid #ccc;
+}
+
+#header a:hover{
+    color: #ccc;
+}
+
+#navegador{
+    list-style: none;
+    text-align: center;
+    background-color: pink;
+    border-radius: 20px;
+}
+
+#navegador li{
+    display: inline;
+    text-align: center;
+    margin: 0 50px 0 0;
+}
+
+#navegador li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 2px 7px 2px 7px;
+}
+
+#navegador li a:hover{
+    border-radius: 5px ;
+    background-color: #FFA4BA;
+}
+
+form{
+    margin-left: 20%;
+    width: 60%;
+    text-align: center;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    margin-top: 15%;
+    margin-bottom: 250px;
+    border-color: #ddd;
+}
+textarea{
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    width: 50%;
+    border-radius: 20px;
+    border: 0;
+    background-color: pink;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+input{
+    border-radius: 20px;
+    border-color: pink;
+    width: 55%;
+}
+input[type=submit]:hover{
+    background-color: #FFA4BA;
+}
+
+footer{
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    font-weight: lighter;
+    color: gray;
+    font-size: 20px;
+}
+footer li{
+    list-style: none;
+}
+#informacion li{
+    display: inline;
+}
+
+#contacto li{
+    display: inline;
+    padding: 2px 10px 2px;
+}
